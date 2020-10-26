@@ -170,17 +170,61 @@
     </p>
 
     <p class="extra-margins">
-        <hlight>In Practice:</hlight> Use \(G=M-TS-\mvec\cdot\Qvec=G_{0}(\mvec,T)+\epsilon \Delta G(\mvec,T)\)
+        <hlight>In Practice:</hlight> Use \(G=M-TS-\mvec\cdot\Qvec=G_{0}(\mvec,T)+\epsilon \Delta G(\mvec,T)+\mathcal{O}(\epsilon^2)\)
     </p>
 
     <p class="extra-margins">
-        <hlight>Find:</hlight> \(\partial_{\epsilon} M\propto \partial_{\epsilon} S\propto \Delta G\)
+        <hlight>Find:</hlight> \(\partial_{\epsilon} M\propto -\partial_{\epsilon} S\propto \Delta G\)
     </p>
 
     <p>
-        LO calculation above is typical use case, but relation holds at all order in \(\epsilon\) <br>
+        LO calculation above is typical use case, our focus, but also holds more generally <br>
         <a href="https://arxiv.org/abs/1912.11161" target="_blank"><cite>[Cremonini et al., 1912.11161]</cite></a>
     </p>
+
+</section>
+
+
+<section id="free-energy-from-path-integral">
+    <h2 class="no-caps title">
+        Black Hole Free Energies
+    </h2>
+
+    <p>
+        <hlight>Free energies</hlight> are most natural to compute in QFT
+    </p>
+
+    <div class="shrink-80">
+        \[ \require{enclose}
+        \begin{gather}
+        e^{-\beta G(T,\mvec)}\equiv {\rm Tr}\left[e^{-\beta\left(H-\mvec\cdot \Qvec\right)}\right]
+        \end{gather}=\int_{\phi(\tau)=\phi(\tau+\beta)}{\cal D}\phi\, e^{-I_{E}[\phi]}\approx e^{-I_{E}^{\rm
+        classical}[\phi]}
+        \]
+    </div>
+
+    <p>
+        <hlight>BH:</hlight> choose \(T\), fixes periodicity, picks out a unique \(M\longleftrightarrow T\)
+    </p>
+
+    <p>
+        If \(I[\phi]=I_{0}[\phi]+\epsilon \Delta I[\phi]\), compute \(G(T,\mvec)\) to \({\cal O}(\epsilon)\) with
+        <hlight>zeroth-order</hlight> solution
+    </p>
+
+    <div class="shrink-80">
+        \[ \require{enclose}
+        \begin{gather}
+        I[\phi_{0}(T,\mvec)+\epsilon \Delta \phi(T,\mvec)]=I_{0}[\phi_{0}]+\epsilon \Delta I[\phi_{0}]+{\cal
+        O(\epsilon^2)}\equiv \beta\left(G_{0}(T,\mvec)+\epsilon \Delta G(T,\mvec)\right)
+        \end{gather}
+        \]
+    </div>
+
+    <p>
+       Work with \(g_{\mu\nu}(T,\mvec)\), rather than \(g_{\mu\nu}(M,\Qvec)\).  
+    </p>
+
 
 </section>
 
@@ -260,52 +304,6 @@
 
     <p>
         Totally arbitrary \(\Qvec\), completely general.
-        <br>
-        Related approximate results hold away from extremality
-    </p>
-
-</section>
-
-
-
-<section id="proof-checks">
-    <h3 class="no-caps title">
-        Additional Checks
-    </h3>
-
-    <p>
-        Can check \(\partial_{\epsilon}M_{\rm ext}=-T\partial_{\epsilon}S|_{T=0}\) and approx. relations against:
-    </p>
-
-    <div class="row">
-        <div class="column">
-            <a href="https://arxiv.org/abs/1903.09156" target="_blank"><img width="50%"
-                    src="slides/figures/ref1.png"></a>
-        </div>
-        <div class="column">
-            <a href="https://arxiv.org/abs/1801.08546" target="_blank"> <img width="22%"
-                    src="slides/figures/ref6.png"></a>
-            <a href="https://arxiv.org/abs/1909.08530" target="_blank"><img width="22%"
-                    src="slides/figures/ref3.png"></a>
-            <a href="https://arxiv.org/abs/1910.14324" target="_blank"><img width="22%"
-                    src="slides/figures/ref4.png"></a>
-            <a href="https://arxiv.org/abs/2007.06582" target="_blank"><img width="22%"
-                    src="slides/figures/ref10.png"></a>
-        </div>
-        <div class="column">
-            <a href="https://arxiv.org/abs/1909.01352" target="_blank"><img width="22%"
-                    src="slides/figures/ref5.png"></a>
-            <a href="https://arxiv.org/abs/1901.11535" target="_blank"><img width="22%"
-                    src="slides/figures/ref2.png"></a>
-            <a href="https://arxiv.org/abs/1912.11161" target="_blank"><img width="22%"
-                    src="slides/figures/ref7.png"></a>
-            <a href="https://arxiv.org/abs/2009.00015" target="_blank"><img width="22%"
-                    src="slides/figures/ref7.png"></a>
-        </div>
-    </div>
-
-    <p>
-        Among others. <hlight>Perfect agreement.</hlight>
     </p>
 
 </section>

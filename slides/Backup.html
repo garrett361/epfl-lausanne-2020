@@ -6,6 +6,136 @@
 </section>
 
 
+
+<section id="sqrt-approx-relations">
+
+    <div>
+        <h2 class="no-caps title">
+            Typical Cases
+        </h2>
+
+        <p>
+            Near extremality, often have <a href="https://arxiv.org/abs/1910.14324" target="_blank"><cite>[Cano et al.,
+                    1910.14324]</cite></a>:
+        <div class="shrink-80">
+            \[
+            S(M,\Q,\epsilon)\approx S_{\rm ext}(\Q,\epsilon)+F(\Q)\left(M-M_{\rm ext}(\Q,\epsilon)\right)^{\alpha}\ ,
+            \quad 0\le \alpha \le 1
+            \]
+        </div>
+        </p>
+
+        <p>Fractional \(\alpha\) is physcially reasonable. \(M_{\rm ext}(Q,\epsilon)\approx M_{\rm
+            ext}^{0}(Q)+\epsilon\Delta M_{\rm ext}(Q)\)</p>
+
+        <p>
+            Implies \(T(M,\Q,\epsilon)\approx \frac{(M-M_{\rm ext}(Q,\epsilon))^{1-\alpha}}{\alpha F(\Q)}\)
+        </p>
+
+        <p>
+            Derivative of interest:
+        </p>
+
+        <div class="shrink-70   bottom-margin-reduced  top-margin-reduced">
+            \[
+            \begin{align}
+            \partial_{\epsilon}S(M,\Q,\epsilon)&=- \frac{\alpha F(\Q)}{(M-M_{\rm ext}(Q,\epsilon))^{1-\alpha}}\partial_{\epsilon}M_{\rm ext}(\Q,\epsilon)+\partial_{\epsilon}S_{\rm ext}(\Q,\epsilon)\nn
+          \implies -T  \partial_{\epsilon}S(M,\Q,\epsilon)&=\partial_{\epsilon}M_{\rm ext}(\Q,\epsilon)-T\partial_{\epsilon}S_{\rm ext}(\Q,\epsilon)
+            \end{align}
+            \]
+        </div>
+        
+        <p>
+            Shows \(\Delta M\approx -T\Delta S\) even slightly away from extremality, in such cases
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section id="more-approx-relations">
+
+    <div>
+        <h2 class="no-caps title">
+            Assumptions: Approx. Relations
+        </h2>
+
+
+        <img width="45%" src="slides/figures/ChangedExtremalityBoundProbingToy.svg">
+
+
+        <p>
+            Probe \(M\) s.t. \(T(M,\Q)\approx T_0+\epsilon \Delta T\) with \(T_0\gg\epsilon \Delta T\)
+        </p>
+
+        <p>
+            Expect \(S(M,\Q,\epsilon)\approx S_{0}(M,\Q)+\epsilon \Delta S(M,\Q)\) here.  Full relation:
+        </p>
+
+        <div class="shrink-70   bottom-margin-reduced  top-margin-reduced">
+            \[
+            \frac{\partial}{\partial \epsilon}\left(M-TS\right)_{T,\Q}=-T\left(\frac{\partial
+            S}{\partial \epsilon}\right)_{M,\Q}
+            \]
+        </div>
+
+        <p> Expect \(M(T,\Q,\epsilon)\), \(S(T,\Q,\epsilon)\) have nice expansions in \(T\)</p>
+
+        <div class="shrink-70  ">
+            \[
+            M(T,\Q,\epsilon)\approx M_{\rm ext}(\Q,\epsilon)+{\cal O}(T) \ , \quad S(T,\Q,\epsilon)\approx S_{\rm ext}(\Q,\epsilon)+{\cal O}(T)
+            \]
+        </div>
+
+        <p>
+            LHS is \(\frac{\partial}{\partial \epsilon}\left(M-TS\right)_{T,\Q}\approx \partial_{\epsilon}M_{\rm ext}(\Q,\epsilon)+{\cal O}(T)\)
+        </p>
+
+        <p>
+            RHS is \(-T\Delta S(M,\Q)\), matching gives \(\Delta M=-T_{0}\Delta S\) in approx. extremal regime
+        </p>
+
+
+        <p>
+            Near extremality, often have <a href="https://arxiv.org/abs/1910.14324" target="_blank"><cite>[Cano
+                    et al.,
+                    1910.14324]</cite></a>:
+        <div class="shrink-80">
+            \[
+            S(M,\Q,\epsilon)\approx S_{\rm ext}(\Q,\epsilon)+F(\Q)\left(M-M_{\rm
+            ext}(\Q,\epsilon)\right)^{\alpha}\ ,
+            \quad 0\le \alpha \le 1
+            \]
+        </div>
+        </p>
+
+        <p>Fractional \(\alpha\) is physcially reasonable. \(M_{\rm ext}(Q,\epsilon)\approx M_{\rm
+            ext}^{0}(Q)+\epsilon\Delta M_{\rm ext}(Q)\)</p>
+
+
+
+        <p>
+            Probe \(M=(1+\delta)\times M_{\rm ext}^{0}\) with \(0<\delta\ll 1\) but large enough so we can expand in
+                \(\epsilon\) </p>
+
+                <p>
+                    Equivalent to working with \(T(M,\Q)\approx T_0+\epsilon \Delta T\) with \(T_0\gg\epsilon \Delta T\)
+                </p>
+
+                <p>
+                    In this regime, still have \(\partial_{\epsilon}M(T,Q,\epsilon)\)
+                </p>
+
+
+    </div>
+
+</section>
+
+
+
+
 <section id="RN-BH-Example-1">
     <h2 class="no-caps title">
         Explicit Example: RN Black Holes
@@ -119,7 +249,7 @@
 
 <section id="Zero-T-2">
 
-    <div >
+    <div>
         <h2 class="no-caps title">
             Non-Analyticity and the \(T\longrightarrow 0\) Limit
         </h2>
@@ -133,12 +263,13 @@
         </p>
 
         <p>
-            Some typical forms of low-\(T\) corrections: <a href="https://arxiv.org/abs/1910.14324" target="_blank"><cite>[Cano et al., 1910.14324]</cite></a>:
-            <div class="shrink-80">
-                \[
-                S(M,\Q,\epsilon)\approx S^{0}_{\rm ext.}(\Q)+F(M,\Q)\sqrt{M-M_{\rm ext}^{0}(\Q)+\epsilon}
-                \]
-            </div>
+            Some typical forms of low-\(T\) corrections: <a href="https://arxiv.org/abs/1910.14324"
+                target="_blank"><cite>[Cano et al., 1910.14324]</cite></a>:
+        <div class="shrink-80">
+            \[
+            S(M,\Q,\epsilon)\approx S^{0}_{\rm ext}(\Q)+F(M,\Q)\sqrt{M-M_{\rm ext}^{0}(\Q)+\epsilon}
+            \]
+        </div>
         </p>
 
         <p>
@@ -146,7 +277,8 @@
         </p>
 
         <p>
-            Whether \(S\) has analytic expansion in \(\epsilon\) depends on \(\frac{M-M_{\rm ext}^{0}}{M}\), or equivalently on \(\frac{T-T_{0}}{T}\)
+            Whether \(S\) has analytic expansion in \(\epsilon\) depends on \(\frac{M-M_{\rm ext}^{0}}{M}\), or
+            equivalently on \(\frac{T-T_{0}}{T}\)
         </p>
 
     </div>
@@ -156,28 +288,30 @@
 
 <section id="Zero-T-3">
 
-    <div >
+    <div>
         <h2 class="no-caps title">
             Non-Analyticity and the \(T\longrightarrow 0\) Limit
         </h2>
 
         <p>
-            Some typical forms of low-\(T\) corrections: <a href="https://arxiv.org/abs/1910.14324" target="_blank"><cite>[Cano et al., 1910.14324]</cite></a>:
-            <div class="shrink-80">
-                \[
-                S(M,\Q,\epsilon)\approx S^{0}_{\rm ext.}(\Q)+F(M,\Q)\sqrt{M-M_{\rm ext}^{0}(\Q)+\epsilon}
-                \]
-            </div>
+            Some typical forms of low-\(T\) corrections: <a href="https://arxiv.org/abs/1910.14324"
+                target="_blank"><cite>[Cano et al., 1910.14324]</cite></a>:
+        <div class="shrink-80">
+            \[
+            S(M,\Q,\epsilon)\approx S^{0}_{\rm ext}(\Q)+F(M,\Q)\sqrt{M-M_{\rm ext}^{0}(\Q)+\epsilon}
+            \]
+        </div>
         </p>
 
         <p>
-            For \(\Delta M\approx -T_0\Delta S\), work at \(M=(1+\delta)\times M_{\rm ext}^{0}\) with \(0<\delta \ll 1\) while maintaining \(\Delta T\ll T_0(M,\Q)\), which are <hlight>opposing constraints</hlight>
+            For \(\Delta M\approx -T_0\Delta S\), work at \(M=(1+\delta)\times M_{\rm ext}^{0}\) with \(0<\delta \ll 1\)
+                while maintaining \(\Delta T\ll T_0(M,\Q)\), which are <hlight>opposing constraints</hlight>
         </p>
 
         <p class="shrink-80">
-                \[
-                S(M,\Q,\epsilon)\approx S^{0}_{\rm ext.}(\Q)+F(M,\Q)\sqrt{M_{\rm ext}^{0}(\Q)\times \delta+\epsilon}
-                \]
+            \[
+            S(M,\Q,\epsilon)\approx S^{0}_{\rm ext}(\Q)+F(M,\Q)\sqrt{M_{\rm ext}^{0}(\Q)\times \delta+\epsilon}
+            \]
         </p>
 
         <p>\(\Delta M\approx -T_0\Delta S\) holds for \(|\epsilon|\gg M_{\rm ext}\delta\)</p>
@@ -185,8 +319,8 @@
         <p>Both sides computed at leading order in \(\delta,\epsilon\)</p>
 
 
-    
-        
+
+
     </div>
 
 </section>
@@ -218,17 +352,18 @@
         \(\partial_{\epsilon}M_{\rm ext}=-T\partial_{\epsilon}S\) can degenerate to \(0=0\) with \(\Delta S\neq 0\)
     </p>
 
-    <p >
+    <p>
         <hlight>Example:</hlight> \(\Delta \mathcal{L}=\mathcal{L}_{\rm GB}=R_{\mu\nu\rho\sigma}^2-4R_{\mu\nu}^2+R^2\)
         <a href="https://arxiv.org/abs/1909.08530" target="_blank"><cite>[Cano et al, 1909.08530]</cite></a>
     </p>
 
-    <p >
+    <p>
         Total derivative changes \(S\), but not \(M(T,\Q)\)
     </p>
-    
+
     <p>
-        Approx. \(\Delta M\approx -T_{0}\Delta S\) relation also trivial at zeroth order in \(\delta=\frac{M}{M_{\rm ext}^{0}}-1\)
+        Approx. \(\Delta M\approx -T_{0}\Delta S\) relation also trivial at zeroth order in \(\delta=\frac{M}{M_{\rm
+        ext}^{0}}-1\)
     </p>
 
 
@@ -279,46 +414,6 @@
     <p class="extra-margins"> Total derivative doesn't change EOM, but does change <hlight>value</hlight> of \(I\)</p>
 
     <p class="extra-margins"> Ends up generating \(\Delta S\neq 0\) while keeping \(M=Q\) at extremality</p>
-
-
-</section>
-
-
-<section id="sign-of-S-more">
-    <h3 class="no-caps title">
-        The Sign of \(\Delta S\)
-    </h3>
-
-    <p>
-        <hlight>Heuristic Reasoning:</hlight> \(S(M,\Qvec)\) is measure of number of microstate<br>
-        combinations consistent with macrostate \(M,\Qvec\) data
-    </p>
-
-    <p class="extra-margins">
-        If \(\Delta \mathcal{L}\longleftrightarrow\) extra UV DOF, more ways of forming \(M,\Qvec\)
-    </p>
-
-
-    <p>
-        <a href="https://arxiv.org/abs/1801.08546" target="_blank"><cite>[Cheung, Remmen, Liu, 1801.08546]</cite></a>
-        provided supporting quantitative, tree-level arguments
-    </p>
-
-
-    <p>
-        <a href="https://arxiv.org/abs/hep-th/0606100" target="_blank"><cite>[Kats, Motl, Padi, 0606100]</cite></a>
-        briefly state BH conjecture of this form:
-    </p>
-
-    <div>
-        <blockquote>
-            "We also conjecture that the first correction to the Bekenstein-Hawking entropy [...] is positive in all
-            cases.
-            We are not aware of counterexamples"
-        </blockquote>
-    </div>
-
-
 
 
 </section>
